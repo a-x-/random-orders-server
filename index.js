@@ -25,6 +25,7 @@ const nouns = [
   'Рюкзак',
   'Цемент',
   'Нож',
+  'Кулер',
 ];
 const features = [
   'Красный',
@@ -67,3 +68,8 @@ function getRandPart(collection) {
 function range(from, to) {
   return Array(to - from + 1).fill(0).map((_, i) => i + 1);
 }
+
+const port = process.env.PORT || 4004;
+
+app.listen(port);
+console.info(`listen ${port}`);
